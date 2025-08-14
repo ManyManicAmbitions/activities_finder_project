@@ -1,7 +1,7 @@
 'use client';
 import { useState } from 'react';
 
-function ShowHideButton({ message = "This application will find and show information about manu activities and events"}){
+function ShowHideButton({ message = "Bonjour"}){
     const [ShowHideButtonEnabled, setShowHideButtonEnabled] = useState(false);
 
     const renderShowHideButton = () => {
@@ -21,7 +21,7 @@ function ShowHideButton({ message = "This application will find and show informa
 
     return (
         <div>
-            <button onClick={ () => setShowHideButtonEnabled(!ShowHideButtonEnabled)}>
+            <button className="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-700" onClick={ () => setShowHideButtonEnabled(!ShowHideButtonEnabled)}>
              {buttonText()}   
             </button>
             {renderShowHideButton()}
@@ -33,8 +33,8 @@ function ShowHideButton({ message = "This application will find and show informa
 export default function ShowHideButtonDemo() {
     return (
         <div>
-            <h1>Show and Hide Button</h1>
-            <ShowHideButton message='Activities and Events'/>
+            <h1>Show and Hide Buttons</h1>
+            <ShowHideButton message='Activities and Events placeholder // This application will find and show information about many activities and events'/>
         </div>
     );
 }
