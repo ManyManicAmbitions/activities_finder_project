@@ -11,7 +11,7 @@ export default function SearchBar({onSearch}) {
         }
     };
     return (
-        <form onSubmit={handleSubmit} className="flex gap-1.5 my-2">
+        <form onSubmit={handleSubmit} className="flex gap-2 my-4">
             <input
             type="text"
             placeholder="Search activities/events"
@@ -21,7 +21,7 @@ export default function SearchBar({onSearch}) {
 
             <button
             type="submit"
-            className="bg-green-500 text-shadow-white px-2 py-1 rounded hover:bg-green-700">
+            className="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-700">
                 Search
             </button>
 

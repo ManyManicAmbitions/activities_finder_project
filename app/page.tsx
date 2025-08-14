@@ -12,10 +12,10 @@ export default function Home() {
     return (
         <div>
             <Nav/>
-            <main>
+            <main className="p-4 max-w-2xl mx-auto">
             <h1 className="text-3xl font-bold text-amber-300">Home Page</h1>
             <SearchBar onSearch={handleSearch}/>
-            {searchTerm && <p>Searching for:{searchTerm}</p>}
+            {searchTerm && <p className="mt-3">Searching for:{searchTerm}</p>}
             </main>
             <Footer/>
         </div>
