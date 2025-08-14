@@ -1,7 +1,6 @@
 'use client';
 
 import Link from 'next/link'
-import '../app/style.css';
  
 export default function Nav(){
     return(
