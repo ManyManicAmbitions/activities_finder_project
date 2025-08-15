@@ -2,7 +2,7 @@
 import {useState} from "react";
 import Nav from "../components/Nav";
 import SearchBar from '../components/SearchBar'
-import Footer from '../components/Footer'
+
 
 export default function Home() {
     const [searchTerm, setSearchTerm] = useState('');
@@ -17,7 +17,6 @@ export default function Home() {
             <SearchBar onSearch={handleSearch}/>
             {searchTerm && <p className="mt-3">Searching for:{searchTerm}</p>}
             </main>
-            <Footer/>
         </div>
     );
   
