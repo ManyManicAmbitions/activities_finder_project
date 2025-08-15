@@ -1,6 +1,5 @@
 'use client';
 import {useState} from "react";
-import Nav from "../components/Nav";
 import SearchBar from '../components/SearchBar'
 
 
@@ -11,7 +10,6 @@ export default function Home() {
     };
     return (
         <div className="min-h-screen flex flex-col">
-            <Nav/>
             <main className="flex-1 p-4 max-w-2xl mx-auto">
             <h1 className="text-3xl font-bold text-amber-300">Home Page</h1>
             <SearchBar onSearch={handleSearch}/>
