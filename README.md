@@ -1,36 +1,38 @@
+## Activities finder application
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+## Components
 
-First, run the development server:
+## ShowHideButtons.js
+The purpose of this component is to show and hide information about events and activities once API integration is complete it would show or hide the information pertaining to the selected activity. currently shows placeholoder text.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## SearchBar.js
+The purpose of this component is to allow the user to search for activities or events using keywords such as "Sports" which would be integrated following the API integration.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Nav.tsx
+The purpose of this component is to allow the user to navigate between the pages on this application. Allowing for seamless and quick navigation.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Header.js
+The purpose of this component is to act as a header for each page displaying the activities finder text at the top of the page, this is displayed through layout.tsx.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Footer.js
+The purpose of this component is to act as a footer for each page displaying the year and the application name at the bottom of the page, this is displayed through layout.tsx. 
 
-## Learn More
+## ContactForm.js
+The purpose of this component is to allow the user to contact the creator or team of creators of the page with any questions on the qpplication or to suggest improvements.
 
-To learn more about Next.js, take a look at the following resources:
+## Card.tsx
+The purpose of this component is to allow the future integration of the API to have a title and description for each activity of event giving ample information about them, currently uses placeholder data.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Routes
+/ - Home page
+/events/[id] - Dynamic route showing a events placeholder details
+/about - Describing the project
+/contact - holds a contact form
+/favourites - holds placholder info will load favourite activities saved by the user after API integreation
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## State Management
+This app currently uses React's useState for UI updates, future versions will expand state usage to display and store real time data from the API Geekseat. 
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
