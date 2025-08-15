@@ -1,4 +1,3 @@
-import Nav from "../../components/Nav";
 import ShowHideButton from '../../components/ShowHideButtons';
 
 export default function About() {

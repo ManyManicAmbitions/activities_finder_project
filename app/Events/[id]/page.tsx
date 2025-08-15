@@ -1,6 +1,3 @@
-import Nav from "../../../components/Nav";
-
-
 export default async function Events({params,}: {params: Promise<{id: string}>;}) {
     const {id} = await params;
 
