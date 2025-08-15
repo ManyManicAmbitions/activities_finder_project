@@ -1,6 +1,5 @@
 import Nav from '../../components/Nav';
-import Footer from '../../components/Footer';
-import ContactForm from '../../components/ContactForm'
+import ContactForm from '../../components/ContactForm';
 
 export default function Contact() {
 
@@ -13,7 +12,6 @@ export default function Contact() {
             <p className="mt-3">Contact us at example@placeholder.com</p>
             <ContactForm/>
         </main>
-        <Footer/>
     </div>
     );
 }

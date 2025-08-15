@@ -1,5 +1,5 @@
 import Nav from "../../components/Nav";
-import Footer from '../../components/Footer';
+
 
 export default function Favourites() {
 
@@ -11,7 +11,6 @@ export default function Favourites() {
             <h1 className="text-3xl font-bold text-amber-300">Favourite Page</h1>
             <p className="mt-3">Favourite activities will be shown here</p>
         </main>
-        <Footer/>
     </div>
     );
 }

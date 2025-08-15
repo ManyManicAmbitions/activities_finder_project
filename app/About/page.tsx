@@ -1,5 +1,4 @@
 import Nav from "../../components/Nav";
-import Footer from '../../components/Footer';
 import ShowHideButton from '../../components/ShowHideButtons';
 
 export default function About() {
@@ -13,7 +12,6 @@ export default function About() {
             <p className="mt-3">Some basic information about the application</p>
             <ShowHideButton/>
         </main>
-        <Footer/>
     </div>
     );
 }
