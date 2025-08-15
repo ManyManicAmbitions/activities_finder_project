@@ -11,7 +11,7 @@ export default function Home() {
     return (
         <div className="min-h-screen flex flex-col">
             <main className="flex-1 p-4 max-w-2xl mx-auto">
-            <h1 className="text-3xl font-bold text-amber-300">Home Page</h1>
+            <h1 className="text-3xl font-bold text-amber-300 mb-4">Home Page</h1>
             <SearchBar onSearch={handleSearch}/>
             {searchTerm && <p className="mt-3">Searching for:{searchTerm}</p>}
             </main>
